@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Binary Search Tree</title>
+        <link rel="stylesheet" href="./css/bstavl.css">
+    </head>
+    <body>
+        <video id="bg-video" autoplay muted loop>
+            <source src="./rain-52039.mp4" type="video/mp4">
+        </video>
+
+        <input type="text" id="value" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="Enter number (Leave for random number)" size="45">
+        <button type="button" onclick="InsertNode();">Insert</button>
+        <button type="button" onclick="DeleteNode();">Delete</button>
+        <button type="button" onclick="SearchNode();">Search</button>
+        <button type="button" onclick="Print(bst.inorder);">Inorder</button>
+        <button type="button" onclick="Print(bst.preorder);">Preorder</button>
+        <button type="button" onclick="Print(bst.postorder);">Postorder</button>
+        <br>
+        <span id="msg"></span>
+
+        <!-- load the d3.js library -->
+        <script src="d3.min.js"></script>
+        <script src="BST_AVL.js" charset="utf-8"></script>
+        <script src="graph.js" charset="utf-8"></script>
+    </body>
+</html>

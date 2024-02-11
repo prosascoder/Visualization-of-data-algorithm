@@ -1,0 +1,155 @@
+   
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background: #f0f0f0;
+    background: linear-gradient(to bottom, #0072ff, #00c6ff);
+    background-image: url("path/to/image.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  h2.title {
+    margin: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    background: #0c2461;
+    cursor: pointer;
+  }
+  
+  .center {
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  /* Navbar Styles */
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .navbar a {
+    margin: 0 1rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+    
+  }
+  
+  .navbar a:hover {
+    color: #0c2461;
+  }
+  
+  .options select {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    margin-right: 1rem;
+    background: #f0f0f0;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .start {
+    background: #0c2461;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: black;
+  }
+  
+  .start:hover {
+    background: #fff;
+    color: #0c2461;
+    
+  }
+  
+  .icon {
+    display: none;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .navbar a {
+      margin: 0.5rem 0;
+    }
+  
+    .options select {
+      margin: 0.5rem 0;
+    }
+  
+    .start {
+      margin-top: 0.5rem;
+    }
+  
+    .icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  .title {
+    position: relative;
+  }
+  
+  .title::after {
+    content: "FULL STACK DEVELOPER";
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+  }
+  
+  .title::before {
+    content: " ANSH SINHA";
+    position: absolute;
+    nav-down: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+  }
+   
+  
+  
+  
